@@ -1,10 +1,7 @@
+import AppRouter from "./router/AppRouter";
+
 function App() {
-  return (
-    <div>
-      <h1>Exclusive Auto Body</h1>
-      <p>Website build in progress.</p>
-    </div>
-  );
+  return <AppRouter />;
 }
 
 export default App;
