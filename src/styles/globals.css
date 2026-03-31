@@ -58,7 +58,7 @@ ul {
   
   .navbar {
     background-color: var(--color-black);
-    border-bottom: 2px solid var(--color-red);
+    border-bottom: 2px solid var(--color-orange);
   }
   
   .navbar__container {
@@ -74,7 +74,7 @@ ul {
   .navbar__logo {
     font-size: 1.5rem;
     font-weight: 700;
-    color: var(--color-silver);
+    color: var(--color-white);
   }
   
   .navbar__links {
@@ -89,11 +89,11 @@ ul {
   
   .navbar__links a:hover,
   .navbar__links a.active {
-    color: var(--color-red);
+    color: var(--color-orange);
   }
   
   .footer {
-    border-top: 1px solid var(--color-silver);
+    border-top: 1px solid var(--color-white);
     background-color: var(--color-dark-gray);
   }
   
@@ -103,7 +103,7 @@ ul {
     margin: 0 auto;
     padding: 1rem;
     text-align: center;
-    color: var(--color-silver);
+    color: var(--color-white);
   }
   .section-title {
     text-align: center;
@@ -111,10 +111,17 @@ ul {
   }
   
   .section-title h2 {
-    font-size: 2rem;
-    color: var(--color-silver);
-    margin-bottom: 0.75rem;
-  }
+  color: var(--color-white);
+}
+
+.section-title h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(to right, var(--color-red), var(--color-orange));
+  margin: 0.5rem auto 0;
+}
   
   .section-title p {
     max-width: 700px;
@@ -125,10 +132,10 @@ ul {
   
   .primary-button {
     display: inline-block;
-    background-color: var(--color-red);
+    background-color: var(--color-orange);
     color: var(--color-white);
     padding: 0.85rem 1.5rem;
-    border: 1px solid var(--color-red);
+    border: 1px solid var(--color-orange);
     border-radius: 4px;
     font-weight: 700;
     transition: all 0.2s ease;
@@ -136,7 +143,7 @@ ul {
   
   .primary-button:hover {
     background-color: transparent;
-    color: var(--color-red);
+    color: var(--color-orange);
   }
   
   .hero {
@@ -162,7 +169,7 @@ ul {
   }
   
   .hero__eyebrow {
-    color: var(--color-red);
+    color: var(--color-orange);
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 700;
@@ -238,7 +245,7 @@ ul {
   
   .why-choose-us__list li {
     padding-left: 1rem;
-    border-left: 3px solid var(--color-red);
+    border-left: 3px solid var(--color-orange);
   }
   
   .why-choose-us__box {
@@ -251,7 +258,7 @@ ul {
     justify-content: center;
     align-items: center;
     gap: 1.25rem;
-    color: var(--color-silver);
+    color: var(--color-white);
     font-size: 1.5rem;
     font-weight: 700;
   }
@@ -267,7 +274,7 @@ ul {
   .home-cta__box h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
-    color: var(--color-silver);
+    color: var(--color-white);
   }
   
   .home-cta__box p {
@@ -316,7 +323,7 @@ ul {
     font-size: 2.8rem;
     line-height: 1.1;
     margin-bottom: 1rem;
-    color: var(--color-silver);
+    color: var(--color-white);
   }
   
   .page-banner__text {
@@ -351,11 +358,11 @@ ul {
     left: 0;
     width: 100%;
     height: 4px;
-    background-color: var(--color-red);
+    background-color: var(--color-orange);
   }
   
   .service-card h3 {
-    color: var(--color-silver);
+    color: var(--color-white);
     margin-bottom: 0.85rem;
     font-size: 1.25rem;
   }
@@ -374,7 +381,7 @@ ul {
   }
   
   .services-page-cta__box h2 {
-    color: var(--color-silver);
+    color: var(--color-white);
     font-size: 2rem;
     margin-bottom: 1rem;
   }
@@ -444,7 +451,7 @@ ul {
 }
 
 .gallery-card__content h3 {
-  color: var(--color-silver);
+  color: var(--color-white);
   font-size: 1.15rem;
 }
 
@@ -456,7 +463,7 @@ ul {
 
 .video-section__header h2 {
   font-size: 2rem;
-  color: var(--color-silver);
+  color: var(--color-white);
   margin-bottom: 1rem;
 }
 
