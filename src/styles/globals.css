@@ -296,3 +296,101 @@ ul {
       justify-content: center;
     }
   }
+  .page-banner {
+    padding: 5rem 1rem 4rem;
+    background:
+      linear-gradient(rgba(10, 10, 10, 0.78), rgba(10, 10, 10, 0.82)),
+      radial-gradient(circle at top left, rgba(193, 18, 31, 0.2), transparent 35%);
+    border-bottom: 1px solid rgba(192, 192, 192, 0.18);
+  }
+  
+  .page-banner__eyebrow {
+    color: var(--color-red);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
+  .page-banner h1 {
+    font-size: 2.8rem;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+    color: var(--color-silver);
+  }
+  
+  .page-banner__text {
+    max-width: 760px;
+    opacity: 0.9;
+  }
+  
+  .services-page,
+  .services-page-cta {
+    padding: 5rem 0;
+  }
+  
+  .services-page__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+  
+  .service-card {
+    position: relative;
+    background: linear-gradient(145deg, #151515, #202020);
+    border: 1px solid rgba(192, 192, 192, 0.18);
+    border-radius: 10px;
+    padding: 2rem 1.5rem;
+    overflow: hidden;
+    min-height: 230px;
+  }
+  
+  .service-card__accent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: var(--color-red);
+  }
+  
+  .service-card h3 {
+    color: var(--color-silver);
+    margin-bottom: 0.85rem;
+    font-size: 1.25rem;
+  }
+  
+  .service-card p {
+    opacity: 0.9;
+    color: var(--color-white);
+  }
+  
+  .services-page-cta__box {
+    background: linear-gradient(145deg, #161616, #232323);
+    border: 1px solid rgba(192, 192, 192, 0.2);
+    border-radius: 10px;
+    padding: 3rem 2rem;
+    text-align: center;
+  }
+  
+  .services-page-cta__box h2 {
+    color: var(--color-silver);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .services-page-cta__box p {
+    max-width: 680px;
+    margin: 0 auto 1.5rem;
+    opacity: 0.9;
+  }
+  
+  @media (max-width: 900px) {
+    .services-page__grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .page-banner h1 {
+      font-size: 2.2rem;
+    }
+  }
