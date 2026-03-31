@@ -6,7 +6,7 @@ function Hero() {
       <div className="hero__overlay">
         <div className="hero__content">
           <p className="hero__eyebrow">Exclusive Auto Body</p>
-          <h1>Precision Auto Body Repair With A Finish You Can Trust</h1>
+          <h1>Precision Auto Body Repair With a Finish you can Trust</h1>
           <p className="hero__text">
             From collision repair to paint refinishing, we bring vehicles back
             to life with craftsmanship, care, and attention to detail.
