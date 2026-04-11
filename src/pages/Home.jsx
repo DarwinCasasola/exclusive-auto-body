@@ -8,43 +8,45 @@ function Home() {
 
       <section className="home-intro page-section">
         <div className="section-heading">
-          <p className="section-label">Reliable Auto Body</p>
-          <h2>Building Quality You Can Count On</h2>
+          <p className="section-label">Reliable Auto Body Repair</p>
+          <h2>Quality Repairs. Honest Service. Professional Results.</h2>
         </div>
 
         <p className="intro-text">
-          Mike
+          Exclusive Auto Body provides dependable collision repair, dent removal,
+          paint refinishing, and restoration services for drivers who want their
+          vehicles looking their best again.
         </p>
       </section>
 
       <section className="services-preview page-section">
         <div className="section-heading">
           <p className="section-label">Our Services</p>
-          <h2>Auto Body Services for Residential and Commercial Projects</h2>
+          <h2>Auto Body Services Designed to Restore Your Vehicle</h2>
         </div>
 
         <div className="card-grid">
           <div className="service-card">
-            <h3>General Auto Body</h3>
+            <h3>Collision Repair</h3>
             <p>
-              Reliable project execution for new builds, upgrades, and structural
-              improvements.
+              Professional body repair for damaged vehicles with attention to fit,
+              finish, and detail.
             </p>
           </div>
 
           <div className="service-card">
-            <h3>Remodeling & Renovation</h3>
+            <h3>Paint & Refinishing</h3>
             <p>
-              Interior and exterior improvements designed to modernize and refresh
-              your space.
+              Quality paint work and refinishing services to restore appearance and
+              protect your vehicle.
             </p>
           </div>
 
           <div className="service-card">
-            <h3>Repairs & Improvements</h3>
+            <h3>Dent & Bumper Repair</h3>
             <p>
-              Practical solutions for property repairs, upgrades, and ongoing
-              maintenance needs.
+              Practical solutions for dents, bumper damage, and exterior cosmetic
+              issues.
             </p>
           </div>
         </div>
@@ -59,7 +61,7 @@ function Home() {
       <section className="recent-work page-section">
         <div className="section-heading">
           <p className="section-label">Recent Work</p>
-          <h2>Take a Look at Our Project Gallery</h2>
+          <h2>See Some of Our Auto Body Projects</h2>
         </div>
 
         <div className="gallery-preview-grid">
@@ -77,10 +79,10 @@ function Home() {
 
       <section className="home-cta">
         <div className="home-cta-content">
-          <p className="section-label light-label">Let&apos;s Build Something Strong</p>
-          <h2>Ready to Start Your Next Project?</h2>
+          <p className="section-label light-label">Let’s Get Your Vehicle Looking Right Again</p>
+          <h2>Need an Estimate or Have Questions?</h2>
           <p>
-            Mike
+            Contact Exclusive Auto Body today to get started.
           </p>
 
           <Link to="/contact" className="primary-btn light-btn">

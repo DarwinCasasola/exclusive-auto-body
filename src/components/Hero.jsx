@@ -5,11 +5,11 @@ function Hero() {
     <section className="hero">
       <div className="hero-overlay">
         <div className="hero-content">
-          <p className="hero-subtitle">Trusted Local Construction Services</p>
-          <h1>Hector&apos;s Construction</h1>
+          <p className="hero-subtitle">Trusted Local Auto Body Shop</p>
+          <h1>Exclusive Auto Body</h1>
           <p className="hero-text">
-            Quality construction, remodeling, and project support for residential
-            and commercial clients.
+            Collision repair, paint restoration, dent removal, and quality body work
+            you can trust in Las Vegas.
           </p>
 
           <div className="hero-buttons">

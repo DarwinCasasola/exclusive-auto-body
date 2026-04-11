@@ -7,9 +7,11 @@ function About() {
         <div className="inner-page-overlay">
           <div className="inner-page-content">
             <p className="section-label">About Us</p>
-            <h1>Built on Hard Work, Quality, and Trust</h1>
+            <h1>Built on Quality, Trust, and Reliable Service</h1>
             <p>
-              Mike
+              Exclusive Auto Body is committed to professional repair work,
+              honest service, and helping customers get their vehicles back in
+              top shape with confidence.
             </p>
           </div>
         </div>
@@ -20,22 +22,25 @@ function About() {
           <div className="about-text">
             <div className="section-heading">
               <p className="section-label">Who We Are</p>
-              <h2>A Auto Body Company Focused on Getting the Job Done Right</h2>
+              <h2>An Auto Body Shop Focused on Doing the Job Right</h2>
             </div>
 
             <p>
-              Mike
+              At Exclusive Auto Body, we take pride in delivering dependable
+              repair services with attention to detail, professional care, and a
+              strong commitment to customer satisfaction.
             </p>
 
             <p>
-              Whether the work involves upgrades, repairs, remodeling, or general
-              Auto Body support, our goal is to provide dependable service and
-              quality results that clients can trust.
+              Whether a vehicle needs collision repair, dent correction, a
+              complete paint job, mechanical support, or inspection
+              certification, our goal is to provide quality workmanship and a
+              finished result our customers can trust.
             </p>
           </div>
 
           <div className="about-image-box">
-            Company / Project Image
+            Shop / Vehicle Image
           </div>
         </div>
       </section>
@@ -44,31 +49,31 @@ function About() {
         <div className="page-section">
           <div className="section-heading">
             <p className="section-label">Our Values</p>
-            <h2>What Matters Most on Every Project</h2>
+            <h2>What Matters Most in Every Repair</h2>
           </div>
 
           <div className="values-grid">
             <div className="value-card">
               <h3>Quality Workmanship</h3>
               <p>
-                We believe every project should be completed with care, precision,
-                and long-lasting quality.
+                We believe every vehicle should be repaired with care,
+                precision, and lasting quality.
               </p>
             </div>
 
             <div className="value-card">
               <h3>Honest Communication</h3>
               <p>
-                We value clear communication throughout the process so clients know
-                what to expect from start to finish.
+                We value clear communication so customers understand the repair
+                process and know what to expect.
               </p>
             </div>
 
             <div className="value-card">
               <h3>Reliable Service</h3>
               <p>
-                We aim to be dependable, professional, and responsive on every job
-                we take on.
+                We aim to be dependable, professional, and responsive from the
+                first estimate to the final result.
               </p>
             </div>
           </div>
@@ -78,16 +83,16 @@ function About() {
       <section className="page-section choose-us-section">
         <div className="section-heading">
           <p className="section-label">Why Choose Us</p>
-          <h2>A Practical, Professional Approach to Auto Body</h2>
+          <h2>A Professional Approach to Auto Body Repair</h2>
         </div>
 
         <div className="choose-us-grid">
           <div className="choose-us-item">
             <span>01</span>
-            <h3>Dependable Project Support</h3>
+            <h3>Dependable Repair Service</h3>
             <p>
-              We work hard to provide reliable service and consistent results for
-              each client and project.
+              We work hard to provide consistent service, quality repairs, and a
+              smooth customer experience.
             </p>
           </div>
 
@@ -95,17 +100,17 @@ function About() {
             <span>02</span>
             <h3>Attention to Detail</h3>
             <p>
-              We focus on the details that help create clean, durable, and
-              professional finished work.
+              We focus on the details that help create clean, professional, and
+              high-quality finished results.
             </p>
           </div>
 
           <div className="choose-us-item">
             <span>03</span>
-            <h3>Residential and Commercial Experience</h3>
+            <h3>Customer-Focused Care</h3>
             <p>
-              Our services are designed to support a wide range of property and
-              project needs.
+              We understand how important your vehicle is, and we aim to make
+              the repair process as clear and stress-free as possible.
             </p>
           </div>
         </div>
@@ -113,9 +118,10 @@ function About() {
 
       <section className="about-cta">
         <div className="about-cta-content">
-          <h2>Let&apos;s Talk About Your Next Project</h2>
+          <h2>Let&apos;s Talk About Your Vehicle</h2>
           <p>
-            Contact Mike
+            Contact Exclusive Auto Body today to request an estimate or ask
+            about the services you need.
           </p>
           <Link to="/contact" className="primary-btn">
             Contact Us

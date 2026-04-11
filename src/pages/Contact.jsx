@@ -1,152 +1,208 @@
+import { useState } from "react";
+
 function Contact() {
-    return (
-      <>
-        <section className="inner-page-hero contact-hero">
-          <div className="inner-page-overlay">
-            <div className="inner-page-content">
-              <p className="section-label">Contact Us</p>
-              <h1>Request a Quote</h1>
-              <p>
-                Get in touch with Mike&apos;s Auto Body to discuss your project,
-                ask questions, or request an estimate for your next job.
-              </p>
+  const [formData, setFormData] = useState({
+    fullName: "",
+    phone: "",
+    email: "",
+    service: "",
+    vinNumber: "",
+    message: "",
+    images: [],
+  });
+
+  const handleChange = (e) => {
+    const { name, value, files } = e.target;
+
+    if (name === "images") {
+      const fileArray = files ? Array.from(files) : [];
+
+      setFormData((prev) => ({
+        ...prev,
+        images: fileArray,
+      }));
+      return;
+    }
+
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    console.log("Form submitted:", formData);
+
+    alert("Request submitted. We’ll contact you shortly.");
+  };
+
+  return (
+    <main className="contact-page">
+      {/* HERO */}
+      <section className="contact-hero">
+        <div className="contact-hero-overlay">
+          <div className="contact-hero-content">
+            <p className="section-label">Exclusive Auto Body</p>
+            <h1>Request an Estimate</h1>
+            <p>
+              Submit your details below and upload photos of the damage so we can
+              provide a faster and more accurate estimate.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* FORM SECTION */}
+      <section className="contact-section page-section">
+        <div className="contact-container">
+
+          {/* LEFT SIDE INFO */}
+          <div className="contact-info">
+            <p className="section-label">Get In Touch</p>
+            <h2>We’ll Help Get Your Vehicle Back to Perfect</h2>
+
+            <p>
+              Whether you need collision repair, paint work, mechanical service,
+              or inspection certification, our team is ready to assist. Upload
+              images for a quicker estimate.
+            </p>
+
+            <div className="contact-details">
+              <p><strong>Phone:</strong> (702) 555-1234</p>
+              <p><strong>Email:</strong> info@exclusiveautobody.com</p>
+              <p><strong>Location:</strong> Las Vegas, NV</p>
             </div>
           </div>
-        </section>
-  
-        <section className="page-section contact-page-section">
-          <div className="contact-grid">
-            <div className="contact-info-panel">
-              <div className="section-heading">
-                <p className="section-label">Get In Touch</p>
-                <h2>Let&apos;s Talk About Your Project</h2>
+
+          {/* FORM */}
+          <form className="contact-form" onSubmit={handleSubmit}>
+            
+            {/* NAME + PHONE */}
+            <div className="form-row">
+              <div className="form-group">
+                <label>Full Name</label>
+                <input
+                  type="text"
+                  name="fullName"
+                  placeholder="John Doe"
+                  value={formData.fullName}
+                  onChange={handleChange}
+                  required
+                />
               </div>
-  
-              <p>
-                Whether you need Auto Body support, remodeling, repairs, or
-                property improvements, we&apos;re here to help. Fill out the form and
-                we&apos;ll get back to you as soon as possible.
-              </p>
-  
-              <div className="contact-info-list">
-                <div className="contact-info-item">
-                  <h3>Phone</h3>
-                  <p>(702) 555-0123</p>
-                </div>
-  
-                <div className="contact-info-item">
-                  <h3>Email</h3>
-                  <p>xxxxxxxxemailxxxx</p>
-                </div>
-  
-                <div className="contact-info-item">
-                  <h3>Service Area</h3>
-                  <p>Las Vegas, Henderson, and surrounding areas</p>
-                </div>
+
+              <div className="form-group">
+                <label>Phone Number</label>
+                <input
+                  type="tel"
+                  name="phone"
+                  placeholder="(702) 555-1234"
+                  value={formData.phone}
+                  onChange={handleChange}
+                  required
+                />
               </div>
             </div>
-  
-            <div className="contact-form-wrapper">
-              <form
-                className="contact-form"
-                name="contact"
-                method="POST"
-                data-netlify="true"
-                netlify-honeypot="bot-field"
-              >
-                <input type="hidden" name="form-name" value="contact" />
-                <input type="hidden" name="bot-field" />
-  
-                <div className="form-row">
-                  <div className="form-group">
-                    <label htmlFor="fullName">Full Name</label>
-                    <input
-                      type="text"
-                      id="fullName"
-                      name="fullName"
-                      placeholder="Your full name"
-                      required
-                    />
-                  </div>
-  
-                  <div className="form-group">
-                    <label htmlFor="phone">Phone Number</label>
-                    <input
-                      type="tel"
-                      id="phone"
-                      name="phone"
-                      placeholder="Your phone number"
-                      required
-                    />
-                  </div>
-                </div>
-  
-                <div className="form-row">
-                  <div className="form-group">
-                    <label htmlFor="email">Email Address</label>
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      placeholder="Your email address"
-                      required
-                    />
-                  </div>
-  
-                  <div className="form-group">
-                    <label htmlFor="service">Service Needed</label>
-                    <select id="service" name="service" required>
-                      <option value="">Select a service</option>
-                      <option value="general-Auto Body">General Auto Body</option>
-                      <option value="remodeling">Remodeling</option>
-                      <option value="renovations">Renovations</option>
-                      <option value="repairs">Repairs & Maintenance</option>
-                      <option value="commercial-projects">Commercial Projects</option>
-                      <option value="other">Other</option>
-                    </select>
-                  </div>
-                </div>
-  
-                <div className="form-group">
-                  <label htmlFor="address">Project Address</label>
-                  <input
-                    type="text"
-                    id="address"
-                    name="address"
-                    placeholder="Project address or city"
-                  />
-                </div>
-  
-                <div className="form-group">
-                  <label htmlFor="preferredContact">Preferred Contact Method</label>
-                  <select id="preferredContact" name="preferredContact">
-                    <option value="">Select one</option>
-                    <option value="phone">Phone</option>
-                    <option value="email">Email</option>
-                    <option value="text">Text</option>
-                  </select>
-                </div>
-  
-                <div className="form-group">
-                  <label htmlFor="message">Project Details</label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    rows="6"
-                    placeholder="Tell us about your project"
-                    required
-                  ></textarea>
-                </div>
-  
-                <button type="submit" className="primary-btn submit-btn">
-                  Send Request
-                </button>
-              </form>
+
+            {/* EMAIL + SERVICE */}
+            <div className="form-row">
+              <div className="form-group">
+                <label>Email Address</label>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="you@email.com"
+                  value={formData.email}
+                  onChange={handleChange}
+                  required
+                />
+              </div>
+
+              <div className="form-group">
+                <label>Service Needed</label>
+                <select
+                  name="service"
+                  value={formData.service}
+                  onChange={handleChange}
+                  required
+                >
+                  <option value="">Select a service</option>
+                  <option>Collision Repair</option>
+                  <option>Ding & Dent Correction</option>
+                  <option>Minor Repair</option>
+                  <option>Complete Paint Job</option>
+                  <option>Mechanical & A/C</option>
+                  <option>VPO-64 Inspection Certification</option>
+                </select>
+              </div>
             </div>
-          </div>
-        </section>
-      </>
-    );
-  }
-  
-  export default Contact;
+
+            {/* VIN */}
+            <div className="form-group">
+              <label>VIN Number</label>
+              <input
+                type="text"
+                name="vinNumber"
+                placeholder="Enter VIN (optional)"
+                value={formData.vinNumber}
+                onChange={handleChange}
+              />
+            </div>
+
+            {/* IMAGE UPLOAD */}
+            <div className="form-group">
+              <label>Add Image(s)</label>
+              <input
+                type="file"
+                name="images"
+                accept="image/*"
+                multiple
+                onChange={handleChange}
+              />
+
+              <small className="file-help-text">
+                Upload clear photos of the damage (Max ~5 images recommended)
+              </small>
+
+              {/* IMAGE PREVIEW */}
+              {formData.images.length > 0 && (
+                <div className="image-preview-grid">
+                  {formData.images.map((file, index) => (
+                    <img
+                      key={index}
+                      src={URL.createObjectURL(file)}
+                      alt="preview"
+                      className="image-preview"
+                    />
+                  ))}
+                </div>
+              )}
+            </div>
+
+            {/* MESSAGE */}
+            <div className="form-group">
+              <label>Describe the Damage</label>
+              <textarea
+                name="message"
+                rows="5"
+                placeholder="Tell us what happened or what you need..."
+                value={formData.message}
+                onChange={handleChange}
+                required
+              />
+            </div>
+
+            {/* SUBMIT */}
+            <button type="submit" className="primary-btn">
+              Submit Request
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+  );
+}
+
+export default Contact;

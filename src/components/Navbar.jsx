@@ -5,7 +5,7 @@ function Navbar() {
     <header className="navbar">
       <div className="navbar-container">
         <Link to="/" className="logo">
-          Hector's Construction
+          Exclusive Auto Body
         </Link>
 
         <nav className="nav-links">
