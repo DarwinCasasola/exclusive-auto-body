@@ -7,10 +7,10 @@ function Gallery() {
         <div className="inner-page-overlay">
           <div className="inner-page-content">
             <p className="section-label">Our Work</p>
-            <h1>Project Gallery</h1>
+            <h1>Auto Body Repair Gallery</h1>
             <p>
-              Take a look at the type of Auto Body, renovation, and improvement
-              work Mike
+              Explore examples of collision repair, dent correction, paint work,
+              and restoration services completed by Exclusive Auto Body.
             </p>
           </div>
         </div>
@@ -19,55 +19,72 @@ function Gallery() {
       <section className="page-section">
         <div className="section-heading">
           <p className="section-label">Gallery</p>
-          <h2>Recent Project Highlights</h2>
+          <h2>Recent Repair & Refinishing Highlights</h2>
         </div>
 
         <p className="gallery-intro-text">
-          Our gallery is designed to showcase the quality, detail, and care that
-          go into every project. As more project photos become available, this
-          page can easily be updated with completed work and before-and-after
-          examples.
+          Our gallery highlights the care, detail, and workmanship that go into
+          every vehicle we service. As more customer vehicles are completed,
+          this page can continue to grow with before-and-after photos, paint
+          work, and finished repairs.
         </p>
 
         <div className="main-gallery-grid">
-          <div className="gallery-card large">Project Image 1</div>
-          <div className="gallery-card">Project Image 2</div>
-          <div className="gallery-card">Project Image 3</div>
-          <div className="gallery-card">Project Image 4</div>
-          <div className="gallery-card large">Project Image 5</div>
-          <div className="gallery-card">Project Image 6</div>
+          <div className="gallery-card large">
+            <img src="/images/gallery-1.jpg" alt="Collision repair work on vehicle front end" />
+          </div>
+
+          <div className="gallery-card">
+            <img src="/images/gallery-2.jpg" alt="Vehicle dent correction and body repair" />
+          </div>
+
+          <div className="gallery-card">
+            <img src="/images/gallery-3.jpg" alt="Auto body paint refinishing work" />
+          </div>
+
+          <div className="gallery-card">
+            <img src="/images/gallery-4.jpg" alt="Minor vehicle body repair result" />
+          </div>
+
+          <div className="gallery-card large">
+            <img src="/images/gallery-5.jpg" alt="Complete paint job on repaired vehicle" />
+          </div>
+
+          <div className="gallery-card">
+            <img src="/images/gallery-6.jpg" alt="Finished auto body restoration work" />
+          </div>
         </div>
       </section>
 
       <section className="gallery-highlights-section">
         <div className="page-section">
           <div className="section-heading">
-            <p className="section-label">Project Focus</p>
-            <h2>Work That Reflects Quality and Function</h2>
+            <p className="section-label">What We Handle</p>
+            <h2>Repair Work That Restores Appearance and Confidence</h2>
           </div>
 
           <div className="gallery-highlights-grid">
             <div className="gallery-highlight-card">
-              <h3>Residential Improvements</h3>
+              <h3>Collision Repair</h3>
               <p>
-                Home upgrades, remodels, repairs, and renovation work designed to
-                improve comfort, appearance, and function.
+                We restore damaged vehicles with careful repair work focused on
+                fit, finish, and overall quality.
               </p>
             </div>
 
             <div className="gallery-highlight-card">
-              <h3>Commercial Projects</h3>
+              <h3>Paint & Refinishing</h3>
               <p>
-                Professional improvements and build support for offices, work
-                spaces, and commercial properties.
+                From touch-ups to complete paint jobs, we help bring vehicles
+                back with a cleaner, sharper finish.
               </p>
             </div>
 
             <div className="gallery-highlight-card">
-              <h3>Detail-Oriented Results</h3>
+              <h3>Dent & Minor Repair</h3>
               <p>
-                Every project is completed with attention to workmanship, durable
-                results, and practical value.
+                We handle dents, dings, scratches, and other body damage with
+                attention to detail and professional care.
               </p>
             </div>
           </div>
@@ -76,9 +93,10 @@ function Gallery() {
 
       <section className="gallery-cta">
         <div className="gallery-cta-content">
-          <h2>Want to Start a Project of Your Own?</h2>
+          <h2>Need Work Done on Your Vehicle?</h2>
           <p>
-            Reach out to MIKE
+            Contact Exclusive Auto Body today to request an estimate or ask
+            about your repair needs.
           </p>
           <Link to="/contact" className="primary-btn">
             Contact Us
