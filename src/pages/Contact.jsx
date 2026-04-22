@@ -70,8 +70,8 @@ function Contact() {
             </p>
 
             <div className="contact-details">
-              <p><strong>Phone:</strong> (702) 555-1234</p>
-              <p><strong>Email:</strong> info@exclusiveautobody.com</p>
+              <p><strong>Phone:</strong> (702) 247-8962</p>
+              <p><strong>Email:</strong> autobodyexclusive@gmail.com</p>
               <p><strong>Location:</strong> Las Vegas, NV</p>
             </div>
           </div>
@@ -98,7 +98,7 @@ function Contact() {
                 <input
                   type="tel"
                   name="phone"
-                  placeholder="(702) 555-1234"
+                  placeholder="(702) 555-XXXX"
                   value={formData.phone}
                   onChange={handleChange}
                   required

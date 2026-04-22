@@ -146,8 +146,8 @@ textarea:focus {
 
 /* Footer */
 .footer {
-  background-color: var(--dark);
-  color: var(--white);
+  background-color: var(--white);
+  color: var(--ff6a00);
   padding: 2rem;
   border-top: 4px solid var(--accent-orange);
 }
@@ -422,8 +422,11 @@ textarea:focus {
 
 .contact-hero {
   background-image:
-    linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
-    url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1400&q=80');
+    linear-gradient(rgba(10,10,10,0.6), rgba(10,10,10,0.6)),
+    url('/images/contact-hero.jpg');
+
+  background-size: cover;
+  background-position: center 25%;
 }
 
 /* Services page */
@@ -1109,4 +1112,18 @@ body {
 
 .logo-img {
   height: 40px;
+}
+
+.about-image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 18px;
+}
+.about-image-box img {
+  transition: transform 0.4s ease;
+}
+
+.about-image-box:hover img {
+  transform: scale(1.03);
 }

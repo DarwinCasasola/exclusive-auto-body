@@ -40,8 +40,11 @@ function About() {
           </div>
 
           <div className="about-image-box">
-            Shop / Vehicle Image
-          </div>
+  <img
+    src="/images/about-shop.jpg"
+    alt="Auto body technician working on vehicle"
+  />
+</div>
         </div>
       </section>
 
