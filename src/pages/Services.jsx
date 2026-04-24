@@ -34,50 +34,32 @@ function Services() {
         <div className="services-grid">
           <div className="service-detail-card">
             <h3>Collision Repair</h3>
-            <p>
-              Complete repair solutions for vehicles damaged in accidents, with
-              careful attention to body alignment, finish, and overall appearance.
-            </p>
+            <p>Complete repair solutions for vehicles damaged in accidents.</p>
           </div>
 
           <div className="service-detail-card">
             <h3>Ding & Dent Correction</h3>
-            <p>
-              Professional dent and ding repair designed to restore smooth body
-              lines and improve the look of your vehicle.
-            </p>
+            <p>Restore smooth body lines and improve vehicle appearance.</p>
           </div>
 
           <div className="service-detail-card">
             <h3>Minor Repair</h3>
-            <p>
-              Fast, reliable repair work for scratches, chips, bumper damage, and
-              other smaller body issues that still deserve quality attention.
-            </p>
+            <p>Fix scratches, chips, and bumper damage quickly and cleanly.</p>
           </div>
 
           <div className="service-detail-card">
             <h3>Complete Paint Job</h3>
-            <p>
-              Full paint services and refinishing work that help renew your
-              vehicle’s finish and bring back a clean, polished look.
-            </p>
+            <p>Full refinishing work for a clean, polished finish.</p>
           </div>
 
           <div className="service-detail-card">
             <h3>Mechanical & A/C</h3>
-            <p>
-              Mechanical support and A/C service to help keep your vehicle running
-              properly and comfortably after repair or inspection.
-            </p>
+            <p>Keep your vehicle running properly and comfortably.</p>
           </div>
 
           <div className="service-detail-card">
-            <h3>VPO-64 Inspection Certification</h3>
-            <p>
-              Inspection and certification services handled with care and accuracy
-              to help meet required standards and documentation needs.
-            </p>
+            <h3>VPO-64 Inspection</h3>
+            <p>Accurate inspection and certification services.</p>
           </div>
         </div>
       </section>
@@ -92,42 +74,48 @@ function Services() {
           <div className="process-grid">
             <div className="process-step">
               <span>01</span>
-              <h3>Inspection</h3>
-              <p>
-                We begin by reviewing the damage, discussing your concerns, and
-                identifying the work your vehicle needs.
-              </p>
+              <h2>Inspection</h2>
+              <h4><p>We carefully inspect your vehicle and assess the damage.</p></h4>
             </div>
 
             <div className="process-step">
               <span>02</span>
-              <h3>Estimate</h3>
-              <p>
-                We provide a clear estimate and outline the repair process so you
-                know what to expect.
-              </p>
+              <h2>Estimate</h2>
+              <h4><p>We provide a clear and accurate estimate for the repair.</p></h4>
             </div>
 
             <div className="process-step">
               <span>03</span>
-              <h3>Repair</h3>
-              <p>
-                Our team completes the work with a focus on quality craftsmanship,
-                clean results, and reliable service.
-              </p>
+              <h2>Repair</h2>
+              <h4><p>We complete the work with precision and attention to detail.</p></h4>
             </div>
 
             <div className="process-step">
               <span>04</span>
-              <h3>Final Review</h3>
-              <p>
-                We check the finished work carefully to make sure your vehicle is
-                ready to return looking its best.
-              </p>
+              <h2>Final Review</h2>
+              <h4><p>We review the finished work to ensure everything meets our standards.</p></h4>
             </div>
           </div>
         </div>
       </section>
+
+      {/* ⭐ GOOGLE REVIEWS SECTION */}
+     {/* Google Reviews Section */}
+<section className="reviews-section">
+  <div className="page-section reviews-content">
+    <div className="section-heading center">
+      <p className="section-label">Customer Reviews</p>
+      <h2>What Our Customers Are Saying</h2>
+    </div>
+
+    <div className="reviews-embed">
+      <div
+        className="elfsight-app-f1704e35-92c9-463a-b2fd-395d135b38d5"
+        data-elfsight-app-lazy
+      ></div>
+    </div>
+  </div>
+</section>
 
       <section className="services-cta">
         <div className="services-cta-content">

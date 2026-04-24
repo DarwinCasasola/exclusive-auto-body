@@ -40,84 +40,36 @@ function About() {
           </div>
 
           <div className="about-image-box">
-  <img
-    src="/images/about-shop.jpg"
-    alt="Auto body technician working on vehicle"
-  />
-</div>
-        </div>
-      </section>
-
-      <section className="about-values-section">
-        <div className="page-section">
-          <div className="section-heading">
-            <p className="section-label">Our Values</p>
-            <h2>What Matters Most in Every Repair</h2>
-          </div>
-
-          <div className="values-grid">
-            <div className="value-card">
-              <h3>Quality Workmanship</h3>
-              <p>
-                We believe every vehicle should be repaired with care,
-                precision, and lasting quality.
-              </p>
-            </div>
-
-            <div className="value-card">
-              <h3>Honest Communication</h3>
-              <p>
-                We value clear communication so customers understand the repair
-                process and know what to expect.
-              </p>
-            </div>
-
-            <div className="value-card">
-              <h3>Reliable Service</h3>
-              <p>
-                We aim to be dependable, professional, and responsive from the
-                first estimate to the final result.
-              </p>
-            </div>
+            <img
+              src="/images/about-shop.jpg"
+              alt="Auto body technician working on vehicle"
+            />
           </div>
         </div>
       </section>
 
-      <section className="page-section choose-us-section">
-        <div className="section-heading">
-          <p className="section-label">Why Choose Us</p>
-          <h2>A Professional Approach to Auto Body Repair</h2>
-        </div>
+      {/* Pawn Stars Section */}
+      <section className="pawn-stars-section">
+  <div className="page-section pawn-stars-content">
+    <div className="pawn-stars-heading">
+      <p className="section-label">Featured Work</p>
+      <h2>Seen Previously on Pawn Stars</h2>
+      <p className="pawn-subtext">
+        Featured on History Channel. Formerly known as Triple AAA Collision.
+      </p>
+    </div>
 
-        <div className="choose-us-grid">
-          <div className="choose-us-item">
-            <span>01</span>
-            <h3>Dependable Repair Service</h3>
-            <p>
-              We work hard to provide consistent service, quality repairs, and a
-              smooth customer experience.
-            </p>
-          </div>
-
-          <div className="choose-us-item">
-            <span>02</span>
-            <h3>Attention to Detail</h3>
-            <p>
-              We focus on the details that help create clean, professional, and
-              high-quality finished results.
-            </p>
-          </div>
-
-          <div className="choose-us-item">
-            <span>03</span>
-            <h3>Customer-Focused Care</h3>
-            <p>
-              We understand how important your vehicle is, and we aim to make
-              the repair process as clear and stress-free as possible.
-            </p>
-          </div>
-        </div>
-      </section>
+    <div className="video-wrapper">
+      <iframe
+        src="https://www.youtube.com/embed/jbzGCnuk_2o"
+        title="Pawn Stars Feature"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      ></iframe>
+    </div>
+  </div>
+</section>
 
       <section className="about-cta">
         <div className="about-cta-content">

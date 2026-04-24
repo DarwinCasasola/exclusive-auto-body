@@ -1127,3 +1127,144 @@ body {
 .about-image-box:hover img {
   transform: scale(1.03);
 }
+.pawn-stars-section {
+  background: #f8f8f8;
+}
+
+.pawn-stars-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section-heading.center {
+  text-align: center;
+}
+
+.pawn-subtext {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--text-gray);
+}
+
+.video-wrapper {
+  margin-top: 2rem;
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.1);
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.reviews-section {
+  background: #f8f8f8;
+}
+
+.reviews-content {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.section-heading.center {
+  text-align: center;
+}
+
+.reviews-embed {
+  margin-top: 2rem;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.1);
+}
+.pawn-stars-section {
+  background: #f8f8f8;
+}
+
+.pawn-stars-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section-heading.center {
+  text-align: center;
+}
+
+.pawn-subtext {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--text-gray);
+}
+
+.video-wrapper {
+  margin-top: 2rem;
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.1);
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.pawn-stars-section {
+  background: linear-gradient(to bottom, #f8f8f8, #ffffff);
+}
+
+.pawn-stars-content {
+  max-width: 1050px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.pawn-stars-heading {
+  max-width: 720px;
+  margin: 0 auto 2.25rem;
+}
+
+.pawn-stars-heading h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.1;
+  margin-bottom: 0.85rem;
+  color: var(--dark);
+}
+
+.pawn-subtext {
+  font-size: 1rem;
+  color: var(--text-gray);
+  margin: 0 auto;
+}
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 18px 38px rgba(0, 0, 0, 0.14);
+  background: #000;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+.hidden {
+  display: none;
+}
