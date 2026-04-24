@@ -44,13 +44,14 @@ function Contact() {
           </div>
 
           <form
-            name="estimate-request"
-            method="POST"
-            data-netlify="true"
-            netlify-honeypot="bot-field"
-            encType="multipart/form-data"
-            className="contact-form"
-          >
+  name="estimate-request"
+  method="POST"
+  action="/thank-you"
+  data-netlify="true"
+  netlify-honeypot="bot-field"
+  encType="multipart/form-data"
+  className="contact-form"
+>
             <input type="hidden" name="form-name" value="estimate-request" />
 
             <p className="hidden">
