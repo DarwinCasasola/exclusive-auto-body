@@ -1268,3 +1268,31 @@ body {
 .hidden {
   display: none;
 }
+.gallery-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center; /* adjust this */
+}
+.gallery-card {
+  height: 280px;
+  overflow: hidden;
+}
+
+.gallery-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Shift Corvette image right so front bumper shows */
+.corvette-card img {
+  object-position: 75% center;
+}
+
+/* Slightly zoom out silver truck image */
+.truck-card img {
+  object-fit: contain;
+  background-color: #f4f4f4;
+  padding: 0.35rem;
+}

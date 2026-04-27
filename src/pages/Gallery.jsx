@@ -24,34 +24,43 @@ function Gallery() {
 
         <p className="gallery-intro-text">
           Our gallery highlights the care, detail, and workmanship that go into
-          every vehicle we service. As more customer vehicles are completed,
-          this page can continue to grow with before-and-after photos, paint
-          work, and finished repairs.
+          every vehicle we service.
         </p>
 
         <div className="main-gallery-grid">
-          <div className="gallery-card large">
-            <img src="/images/gallery-1.jpg" alt="Collision repair work on vehicle front end" />
+        <div className="gallery-card corvette-card">
+  <img src="/images/gallery-1.jpg" alt="Auto body gallery image 1" />
+</div>
+
+          <div className="gallery-card">
+            <img src="/images/gallery-2.jpg" alt="Auto body gallery image 2" />
           </div>
 
           <div className="gallery-card">
-            <img src="/images/gallery-2.jpg" alt="Vehicle dent correction and body repair" />
+            <img src="/images/gallery-3.jpg" alt="Auto body gallery image 3" />
           </div>
 
           <div className="gallery-card">
-            <img src="/images/gallery-3.jpg" alt="Auto body paint refinishing work" />
+            <img src="/images/gallery-4.jpg" alt="Auto body gallery image 4" />
+          </div>
+
+          <div className="gallery-card medium">
+            <img src="/images/gallery-5.jpg" alt="Auto body gallery image 5" />
           </div>
 
           <div className="gallery-card">
-            <img src="/images/gallery-4.jpg" alt="Minor vehicle body repair result" />
-          </div>
-
-          <div className="gallery-card large">
-            <img src="/images/gallery-5.jpg" alt="Complete paint job on repaired vehicle" />
+            <img src="/images/gallery-6.jpg" alt="Auto body gallery image 6" />
           </div>
 
           <div className="gallery-card">
-            <img src="/images/gallery-6.jpg" alt="Finished auto body restoration work" />
+            <img src="/images/gallery-7.jpg" alt="Auto body gallery image 7" />
+          </div>
+
+          <div className="gallery-card truck-card">
+            <img src="/images/gallery-8.jpg" alt="Auto body gallery image 8" />
+          </div>
+          <div className="gallery-card">
+            <img src="/images/gallery-9.jpg" alt="Auto body gallery image 9" />
           </div>
         </div>
       </section>
