@@ -79,7 +79,7 @@ function Contact() {
                   type="tel"
                   id="phone"
                   name="phone"
-                  placeholder="(702) 555-1234"
+                  placeholder="(702) 247-8962"
                   required
                 />
               </div>
