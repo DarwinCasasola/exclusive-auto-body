@@ -37,7 +37,7 @@ function Contact() {
             </p>
 
             <div className="contact-details">
-              <p><strong>Phone:</strong> (702) 555-1234</p>
+              <p><strong>Phone:</strong> (702) 247-8962</p>
               <p><strong>Email:</strong> autobodyexclusive@gmail.com</p>
               <p><strong>Location:</strong> Las Vegas, NV</p>
             </div>
