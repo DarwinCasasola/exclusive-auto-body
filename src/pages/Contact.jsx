@@ -1,13 +1,4 @@
-import { useState } from "react";
-
 function Contact() {
-  const [selectedImages, setSelectedImages] = useState([]);
-
-  const handleImageChange = (e) => {
-    const files = e.target.files ? Array.from(e.target.files) : [];
-    setSelectedImages(files);
-  };
-
   return (
     <main className="contact-page">
       <section className="contact-hero">
@@ -16,9 +7,8 @@ function Contact() {
             <p className="section-label">Exclusive Auto Body</p>
             <h1>Request an Estimate</h1>
             <p>
-              Submit your details and upload photos of the damage so we can
-              provide a fast, accurate estimate and get your vehicle back to
-              looking its best.
+              Submit your details below and our team will review your request and
+              contact you with the next steps.
             </p>
           </div>
         </div>
@@ -32,8 +22,8 @@ function Contact() {
 
             <p>
               Whether you need collision repair, paint work, mechanical service,
-              or inspection certification, our team is ready to assist. Upload
-              images for a quicker estimate.
+              or inspection certification, our team is ready to assist. Send us
+              your details and we’ll follow up as soon as possible.
             </p>
 
             <div className="contact-details">
@@ -44,14 +34,13 @@ function Contact() {
           </div>
 
           <form
-  name="estimate-request"
-  method="POST"
-  action="/thank-you"
-  data-netlify="true"
-  netlify-honeypot="bot-field"
-  encType="multipart/form-data"
-  className="contact-form"
->
+            name="estimate-request"
+            method="POST"
+            action="/thank-you"
+            data-netlify="true"
+            netlify-honeypot="bot-field"
+            className="contact-form"
+          >
             <input type="hidden" name="form-name" value="estimate-request" />
 
             <p className="hidden">
@@ -102,9 +91,7 @@ function Contact() {
                 <select id="service" name="service" required>
                   <option value="">Select a service</option>
                   <option value="Collision Repair">Collision Repair</option>
-                  <option value="Ding & Dent Correction">
-                    Ding & Dent Correction
-                  </option>
+                  <option value="Ding & Dent Correction">Ding & Dent Correction</option>
                   <option value="Minor Repair">Minor Repair</option>
                   <option value="Complete Paint Job">Complete Paint Job</option>
                   <option value="Mechanical & A/C">Mechanical & A/C</option>
@@ -126,36 +113,7 @@ function Contact() {
             </div>
 
             <div className="form-group">
-              <label htmlFor="images">Add Image(s)</label>
-              <input
-                type="file"
-                id="images"
-                name="images"
-                accept="image/*"
-                multiple
-                onChange={handleImageChange}
-              />
-
-              <small className="file-help-text">
-                Upload clear photos of the damage. Multiple images are allowed.
-              </small>
-
-              {selectedImages.length > 0 && (
-                <div className="image-preview-grid">
-                  {selectedImages.map((file, index) => (
-                    <img
-                      key={index}
-                      src={URL.createObjectURL(file)}
-                      alt={`Vehicle damage preview ${index + 1}`}
-                      className="image-preview"
-                    />
-                  ))}
-                </div>
-              )}
-            </div>
-
-            <div className="form-group">
-              <label htmlFor="message">Describe the Damage</label>
+              <label htmlFor="message">Describe the Damage or Service Needed</label>
               <textarea
                 id="message"
                 name="message"
