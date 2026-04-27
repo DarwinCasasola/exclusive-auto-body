@@ -13,9 +13,7 @@ function Hero() {
           </h1>
 
           <p className="hero-text">
-            Collision repair, ding and dent correction, complete paint jobs,
-            mechanical service, and VPO-64 inspection certification handled with
-            care, precision, and professional results.
+          COLLISION REPAIR, DING AND DENT CORRECTION, COMPLETE PAINT JOBS, MECHANICAL SERVICE, AND VPO-64 INSPECTION CERTIFICATION HANDLED WITH CARE, PRECISION, AND PROFESSIONAL RESULTS.
           </p>
 
           <div className="hero-buttons">
