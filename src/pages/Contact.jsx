@@ -33,6 +33,19 @@ function Contact() {
             </div>
           </div>
 
+          <div className="map-card">
+  <iframe
+    title="Exclusive Auto Body Location"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d186193.16264350235!2d-115.48255681328125!3d36.09046449999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c8c6a0f85fcdc1%3A0xe5b11e760a92c5b9!2sExclusive%20Auto%20Body%2C%20Inc.!5e1!3m2!1sen!2sus!4v1777422173215!5m2!1sen!2sus"
+    width="100%"
+    height="350"
+    style={{ border: 0 }}
+    allowFullScreen
+    loading="lazy"
+    referrerPolicy="no-referrer-when-downgrade"
+  ></iframe>
+</div>
+
           <form
             name="estimate-request"
             method="POST"

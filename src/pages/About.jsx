@@ -39,12 +39,15 @@ function About() {
             </p>
           </div>
 
-          <div className="about-image-box">
-            <img
-              src="/images/about-shop.jpg"
-              alt="Auto body technician working on vehicle"
-            />
-          </div>
+          <div className="about-image-box about-carousel">
+  <div className="about-carousel-track">
+    <img src="/images/about-shop-1.jpg" alt="Exclusive Auto Body shop work 1" />
+    <img src="/images/about-shop-2.jpg" alt="Exclusive Auto Body shop work 2" />
+    <img src="/images/about-shop-3.jpg" alt="Exclusive Auto Body shop work 3" />
+    <img src="/images/about-shop-4.jpg" alt="Exclusive Auto Body shop work 4" />
+    <img src="/images/about-shop-5.jpg" alt="Exclusive Auto Body shop work 5" />
+  </div>
+</div>
         </div>
       </section>
 
