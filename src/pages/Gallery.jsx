@@ -28,9 +28,10 @@ function Gallery() {
         </p>
 
         <div className="main-gallery-grid">
-        <div className="gallery-card corvette-card">
-  <img src="/images/gallery-1.jpg" alt="Auto body gallery image 1" />
-</div>
+
+          <div className="gallery-card corvette-card">
+            <img src="/images/gallery-1.jpg" alt="Auto body gallery image 1" />
+          </div>
 
           <div className="gallery-card">
             <img src="/images/gallery-2.jpg" alt="Auto body gallery image 2" />
@@ -59,9 +60,37 @@ function Gallery() {
           <div className="gallery-card truck-card">
             <img src="/images/gallery-8.jpg" alt="Auto body gallery image 8" />
           </div>
+
           <div className="gallery-card">
             <img src="/images/gallery-9.jpg" alt="Auto body gallery image 9" />
           </div>
+
+          {/* NEW IMAGES */}
+
+          <div className="gallery-card">
+            <img src="/images/gallery-10.jpg" alt="Auto body gallery image 10" />
+          </div>
+
+          <div className="gallery-card">
+            <img src="/images/gallery-11.jpg" alt="Auto body gallery image 11" />
+          </div>
+
+          <div className="gallery-card medium">
+            <img src="/images/gallery-12.jpg" alt="Auto body gallery image 12" />
+          </div>
+
+          <div className="gallery-card">
+            <img src="/images/gallery-13.jpg" alt="Auto body gallery image 13" />
+          </div>
+
+          <div className="gallery-card">
+            <img src="/images/gallery-14.jpg" alt="Auto body gallery image 14" />
+          </div>
+
+          <div className="gallery-card">
+            <img src="/images/gallery-15.jpg" alt="Auto body gallery image 15" />
+          </div>
+
         </div>
       </section>
 

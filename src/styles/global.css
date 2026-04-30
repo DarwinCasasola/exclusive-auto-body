@@ -158,7 +158,7 @@ textarea:focus {
   text-align: center;
 }
 
-.footer h3 {
+.footer h1 {
   margin-bottom: 0.5rem;
   color: var(--accent-orange);
 }
@@ -1345,43 +1345,166 @@ body {
   border-radius: 18px;
 }
 
-.about-carousel-track {
-  display: flex;
-  width: 500%;
-  height: 100%;
-  animation: aboutCarousel 25s infinite;
-}
-
-.about-carousel-track img {
+.about-carousel img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  flex: 0 0 20%;
+  display: block;
 }
 
-/* one image at a time */
-@keyframes aboutCarousel {
-  0%, 16% {
-    transform: translateX(0);
+/* Arrows */
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(0, 0, 0, 0.55);
+  color: white;
+  font-size: 2rem;
+  line-height: 1;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  transition: 0.25s ease;
+  z-index: 2;
+}
+
+.carousel-arrow:hover {
+  background: var(--primary-red);
+}
+
+.carousel-arrow-left {
+  left: 1rem;
+}
+
+.carousel-arrow-right {
+  right: 1rem;
+}
+
+/* Dots */
+.carousel-dots {
+  position: absolute;
+  left: 50%;
+  bottom: 1rem;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.45rem;
+  z-index: 2;
+}
+
+.carousel-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255, 255, 255, 0.55);
+  cursor: pointer;
+  padding: 0;
+}
+
+.carousel-dot.active {
+  background: white;
+  width: 22px;
+  border-radius: 999px;
+}
+
+@media (max-width: 768px) {
+  .about-carousel {
+    height: 320px;
   }
 
-  20%, 36% {
-    transform: translateX(-20%);
+  .carousel-arrow {
+    width: 36px;
+    height: 36px;
+    font-size: 1.7rem;
   }
+}
+/* OWNER MESSAGE */
+.owner-message {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  border-left: 4px solid var(--primary-red);
+  background: #f8f8f8;
+  border-radius: 14px;
+}
 
-  40%, 56% {
-    transform: translateX(-40%);
-  }
+.owner-greeting {
+  font-weight: 700;
+}
 
-  60%, 76% {
-    transform: translateX(-60%);
-  }
+.owner-signoff {
+  margin-top: 1rem;
+}
 
-  80%, 96% {
-    transform: translateX(-80%);
-  }
+.signature-img {
+  max-width: 180px;
+  margin: 0.25rem 0;
+}
 
-  100% {
-    transform: translateX(0);
-  }
+.owner-name {
+  font-weight: 700;
+}
+
+/* CAROUSEL */
+.about-carousel {
+  position: relative;
+  height: 420px;
+  overflow: hidden;
+  border-radius: 18px;
+}
+
+.about-carousel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ARROWS */
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.carousel-arrow-left {
+  left: 10px;
+}
+
+.carousel-arrow-right {
+  right: 10px;
+}
+
+/* DOTS */
+.carousel-dots {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 6px;
+}
+
+.carousel-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.6);
+  border: none;
+}
+
+.carousel-dot.active {
+  background: white;
+  width: 18px;
+  border-radius: 999px;
 }

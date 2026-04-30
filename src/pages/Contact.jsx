@@ -29,7 +29,7 @@ function Contact() {
             <div className="contact-details">
               <p><strong>Phone:</strong> (702) 247-8962</p>
               <p><strong>Email:</strong> autobodyexclusive@gmail.com</p>
-              <p><strong>Location:</strong> Las Vegas, NV</p>
+              <p><strong>Location:</strong> 3859 S Valley View Blvd #12, Las Vegas, NV 89103 </p>
             </div>
           </div>
 

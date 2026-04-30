@@ -54,12 +54,12 @@ function Services() {
 
           <div className="service-detail-card">
             <h3>Mechanical & A/C</h3>
-            <p>Keep your vehicle running properly and comfortably.</p>
+            <p>We provide mechanical repairs and A/C service to keep your vehicle reliable, efficient, and comfortable year-round.</p>
           </div>
 
           <div className="service-detail-card">
-            <h3>VPO-64 Inspection</h3>
-            <p>Accurate inspection and certification services.</p>
+            <h3>VP-064 Inspection</h3>
+            <p>VP-064 inspection certification verifies that your vehicle meets Nevada DMV safety and identification requirements after repairs or restoration.</p>
           </div>
         </div>
       </section>

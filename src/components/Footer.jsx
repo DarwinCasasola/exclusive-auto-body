@@ -2,10 +2,10 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="footer-container">
-        <h3>Exclusive Auto Body</h3>
+        <h1>Exclusive Auto Body</h1>
 
         <p>Reliable auto body services with quality workmanship.</p>
-        <p>Serving Las Vegas and surrounding areas.</p>
+        <p>3859 S Valley View Blvd #12, Las Vegas, NV 89103</p>
 
         {/* Copyright */}
         <p className="site-footer">
