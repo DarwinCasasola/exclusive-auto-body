@@ -1508,3 +1508,23 @@ body {
   width: 18px;
   border-radius: 999px;
 }
+.map-card {
+  display: block;
+  margin: 2rem 0;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform 0.25s ease;
+}
+
+.map-card:hover {
+  transform: translateY(-4px);
+}
+
+.map-card iframe {
+  pointer-events: none; /* 👈 THIS makes entire map clickable */
+  width: 100%;
+  height: 350px;
+  border: 0;
+}

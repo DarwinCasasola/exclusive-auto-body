@@ -1,3 +1,5 @@
+import React from 'react';
+
 function Contact() {
   return (
     <main className="contact-page">
@@ -29,22 +31,28 @@ function Contact() {
             <div className="contact-details">
               <p><strong>Phone:</strong> (702) 247-8962</p>
               <p><strong>Email:</strong> autobodyexclusive@gmail.com</p>
-              <p><strong>Location:</strong> 3859 S Valley View Blvd #12, Las Vegas, NV 89103 </p>
+              <p><strong>Location:</strong> 3855 S Valley View Blvd #46, Las Vegas, NV 89103</p>
             </div>
           </div>
 
-          <div className="map-card">
-  <iframe
-    title="Exclusive Auto Body Location"
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d186193.16264350235!2d-115.48255681328125!3d36.09046449999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c8c6a0f85fcdc1%3A0xe5b11e760a92c5b9!2sExclusive%20Auto%20Body%2C%20Inc.!5e1!3m2!1sen!2sus!4v1777422173215!5m2!1sen!2sus"
-    width="100%"
-    height="350"
-    style={{ border: 0 }}
-    allowFullScreen
-    loading="lazy"
-    referrerPolicy="no-referrer-when-downgrade"
-  ></iframe>
-</div>
+          {/* 🔥 CLICKABLE MAP */}
+          <a
+            href="https://www.google.com/maps/dir/?api=1&destination=3855+S+Valley+View+Blvd+%2346+Las+Vegas+NV+89103"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="map-card"
+          >
+            <iframe
+              title="Exclusive Auto Body Location"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2824.187851932832!2d-115.19132119999999!3d36.121576399999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c8c6a0f8608789%3A0x2599a3533c308872!2s3855%20S%20Valley%20View%20Blvd%20%2346%2C%20Las%20Vegas%2C%20NV%2089103!5e1!3m2!1sen!2sus!4v1777646825951!5m2!1sen!2sus"
+              width="100%"
+              height="350"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </a>
 
           <form
             name="estimate-request"
