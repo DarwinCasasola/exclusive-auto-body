@@ -15,7 +15,7 @@ function Hero() {
           <p className="hero-text">
             Collision repair, ding and dent correction, complete paint jobs,
             mechanical service, and VPO-64 inspection certification handled with
-            care, precision, and professional results. CALL US TODAY (702) 247-8962
+            care, precision, and professional results.
           </p>
 
           <div className="hero-buttons">

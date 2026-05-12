@@ -5,7 +5,7 @@ function Footer() {
         <h1>Exclusive Auto Body</h1>
 
         <p>Reliable auto body services with quality workmanship.</p>
-        <p>3859 S Valley View Blvd #12, Las Vegas, NV 89103</p>
+        <p>3855 S Valley View Blvd #46, Las Vegas, NV 89103</p>
         <p>CALL US TODAY (702) 247-8962</p>
 
         {/* Copyright */}
